@@ -7,6 +7,6 @@ const app = Express();
 app.use(Express.json());
 app.use(cors());
 
-app.use("/users", userRotes);
+app.use("/", userRotes);
 
 app.listen(8800);
