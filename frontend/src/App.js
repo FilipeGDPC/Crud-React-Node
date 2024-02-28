@@ -20,8 +20,11 @@ function App() {
 
   return (
     <>
-      <container>       
-      </container>     
+      <Container>
+        <Title>USUÁRIOS</Title>
+        <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
+        <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
+      </Container>
       <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle />
     </>
@@ -29,4 +32,3 @@ function App() {
 }
 
 export default App;
-
